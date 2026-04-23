@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MokshaHamilton</title>
+  <title>Moksha</title>
   <style>
     body {
       margin: 0;
@@ -118,12 +118,12 @@
 <body>
 
 <header>
- <header>
-  <img src="mokshalogocropped.png" alt="Moksha Banner" style="width:100%; height:auto; display:block;">
-</header><img src="mokshakeralapic.png" alt=""><h2>MOKSHA HAMILTON</h2>
+  <header>
+  <img src="mokshalogoresized.png" alt="Moksha Banner" style="width:100%; height:auto; display:block;">
+</header><img src="mokshakeralapic1.png" alt=""><h2>MOKSHA HAMILTON</h2>
   <p style="font-size:1.5em; margin-top:10px;">നമസ്കാരം</p>
-  <p>Hamilton based Hindu malayali community</p>
-  <p><em>Vasudhaiva Kudumubakam — The World is One Family</em></p>
+  <p>Promoting Hindu Malayali Culture for Future Generations</p>
+  <p><em>Vasudhaiva Kudumbakam — The World is One Family</em></p>
   <a href="#donate" class="btn">Support Us</a>
 </header>
 
@@ -136,7 +136,7 @@
 
 <div class="container" id="about">
   <h2>About Us</h2>
-  <p>Moksha is a hamilton based cultural organization dedicated to preserving and promoting Hindu Malayali culture among our younger generations. We aim to pass on our traditions, values, language, and heritage through meaningful cultural experiences and community engagement.</p>
+  <p>Moksha is a  hindu malayali cultural organization promoting Hindu Malayali culture among younger generations. We aim to pass on our traditions, values, language, and heritage through meaningful cultural experiences and community engagement.</p>
 </div>
 
 <div class="container" id="programs">
@@ -148,7 +148,7 @@
     </div>
     <div class="card">
       <h3>Language & Arts</h3>
-      <p>Workshops in Malayalam, classical dance, music, and bhagavatgita classes.</p>
+      <p>Workshops in Malayalam, classical dance, music, and storytelling.</p>
     </div>
     <div class="card">
       <h3>Heritage Learning</h3>
@@ -182,22 +182,68 @@
     <button type="submit">Send Message</button>
   </form>
 </div>
-
 <div class="container" id="gallery">
   <h2>Gallery</h2>
   <div class="cards">
-    <div class="card"><img src="C:\Users\keerthana\Downloads\mokshalogo\index.html" style="width:100%; border-radius:8px;"></div>
-    <div class="card"><img src="img2.jpg" style="width:100%; border-radius:8px;"></div>
-    <div class="card"><img src="img3.jpg" style="width:100%; border-radius:8px;"></div>
+    <div class="card"><img src="image1.jpg" style="width:100%; border-radius:8px;"></div>
+    <div class="card"><img src="image2.jpg" style="width:100%; border-radius:8px;"></div>
+    <div class="card"><img src="image3.jpg" style="width:100%; border-radius:8px;"></div>
   </div>
 </div>
 <footer>
-  <p>© 2026 Moksha | Non-Profit Organization</p>
+  <p>© 2026 Moksha | Hindu Malayali Cultural Organization</p>
   <p>
     <a href="https://www.facebook.com/share/18T49piAZH/" target="_blank" style="color:white; margin: 0 10px; text-decoration:none;">Facebook</a> |
     <a href="https://www.instagram.com/mokshahamilton?igsh=MTFjOXZlZnF3ZTNsbg==" target="_blank" style="color:white; margin: 0 10px; text-decoration:none;">Instagram</a>
   </p>
 </footer>
+<script>
+// Lightbox functionality
+const images = document.querySelectorAll('#gallery img');
+const lightbox = document.createElement('div');
+lightbox.id = 'lightbox';
+document.body.appendChild(lightbox);
 
+images.forEach(image => {
+  image.addEventListener('click', e => {
+    lightbox.classList.add('active');
+    const img = document.createElement('img');
+    img.src = image.src;
+    while (lightbox.firstChild) {
+      lightbox.removeChild(lightbox.firstChild);
+    }
+    lightbox.appendChild(img);
+  });
+});
+
+lightbox.addEventListener('click', e => {
+  if (e.target !== e.currentTarget) return;
+  lightbox.classList.remove('active');
+});
+</script>
+
+<style>
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  }
+
+#lightbox.active {
+  display: flex;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+</style>
 </body>
 </html>
