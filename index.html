@@ -182,6 +182,20 @@
     <button type="submit">Send Message</button>
   </form>
 </div>
+  <p id="successMessage" style="display:none; color:green; font-weight:bold;">Thank you! Your registration has been submitted.</p>
+</div>
+
+<div class="container" id="register">
+  <h2>Member Registration</h2>
+  <p>Join Moksha community and be part of our cultural journey.</p>
+  <form id="registrationForm" action="https://formspree.io/f/yourformid" method="POST">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="text" name="phone" placeholder="Phone Number">
+    <textarea name="message" placeholder="Tell us about your interest"></textarea>
+    <button type="submit">Register</button>
+  </form>
+</div>
 <div class="container" id="gallery">
   <h2>Gallery</h2>
   <div class="cards">
