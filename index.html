@@ -1,121 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moksha</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background: #faf7f2;
-    }
+<style>
+body {margin:0;font-family:Arial;background:#faf7f2;}
+header {position:relative;background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('kerala-bg.jpg');background-size:cover;background-position:center;color:white;padding:100px 20px;text-align:center;}
+header img.logo {position:absolute;top:20px;left:20px;width:140px;border-radius:10px;}
+h1 {font-size:3em;margin:0;}
+nav {background:#5C1A1A;text-align:center;padding:12px;}
+nav a {color:white;margin:10px;text-decoration:none;font-weight:bold;}
+.container {padding:30px;max-width:1000px;margin:auto;background:white;margin-top:20px;border-radius:10px;}
+h2 {color:#8E2C2C;}
+.cards {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+.card {background:#fff8f0;padding:20px;border-radius:10px;}
+footer {text-align:center;padding:20px;background:#5C1A1A;color:white;margin-top:20px;}
+input,textarea,select {width:100%;padding:10px;margin:8px 0;border-radius:5px;border:1px solid #ccc;}
+button {background:#8E2C2C;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;}
+#gallery img {cursor:pointer;width:100%;border-radius:8px;}
+#lightbox {position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);display:none;justify-content:center;align-items:center;}
+#lightbox.active {display:flex;}
+#lightbox img {max-width:90%;max-height:80%;}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8em !important;
+  }
 
-    header {
-      background: linear-gradient(135deg, #8E2C2C, #D4AF37);
-      color: white;
-      padding: 50px 20px;
-      text-align: center;
-    }
+  header p {
+    font-size: 1em !important;
+  }
 
-    header h1 {
-      margin: 0;
-      font-size: 3em;
-      letter-spacing: 2px;
-    }
-
-    header p {
-      font-size: 1.3em;
-      margin-top: 10px;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
-      background: #D4AF37;
-      color: black;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-
-    nav {
-      background: #5C1A1A;
-      text-align: center;
-      padding: 12px;
-    }
-
-    nav a {
-      color: white;
-      margin: 12px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: #D4AF37;
-    }
-
-    .container {
-      padding: 30px;
-      max-width: 1000px;
-      margin: auto;
-      background: white;
-      margin-top: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    h2 {
-      color: #8E2C2C;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: #fff8f0;
-      padding: 20px;
-      border-radius: 10px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #5C1A1A;
-      color: white;
-      margin-top: 20px;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    button {
-      background: #8E2C2C;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #5C1A1A;
-    }
-  </style>
+  header div img {
+    width: 160px !important;
+    max-width: 70vw;
+  }
+}
+</style>
 </head>
-
 <body>
+
 <header style="position:relative; padding:0; overflow:hidden;">
 
   <!-- Banner Background -->
@@ -141,7 +60,7 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
       margin-bottom: 15px;
     ">
-      <img src="mokshanewlogocopy.png" style="width:140px; max-width:40vw; display:block;">
+      <img src="mokshanewlogocopy.png" style="width:200px; max-width:60vw; display:block;">
     </div>
 
     <!-- Text Content -->
