@@ -53,13 +53,7 @@ button {background:#8E2C2C;color:white;padding:10px 20px;border:none;border-radi
   ">
 
     <!-- Center Logo -->
-    <div style="
-  background: #f4b183;
-  padding: 16px 24px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  margin-bottom: 20px;
-">
+   <div class="logo-box">
      
  <img src="mokshalogonew.png" class="logo">
 
@@ -223,16 +217,23 @@ lightbox.addEventListener('click', e => {
   display: block;
 }
 
+/* Logo styling */
+.logo {
+  width: 280px;
+  max-width: 90%;
+  height: auto;
+  display: block;
+}
+
 /* Logo background box */
 .logo-box {
   background: #f4b183;
   padding: 15px 25px;
   border-radius: 12px;
   box-shadow: 0 6px 16px rgba(0,0,0,0.3);
-  margin: 0 auto 20px auto;   /* centers the box */
-  width: fit-content;         /* keeps it tight around logo */
+  margin: 0 auto 20px auto;
+  width: fit-content;
   text-align: center;
-}
 }
 
 /* Mobile responsiveness */
@@ -246,7 +247,7 @@ lightbox.addEventListener('click', e => {
   .logo {
     width: 180px;
   }
-} 
+}
 </style>
 </body>
 </html>
