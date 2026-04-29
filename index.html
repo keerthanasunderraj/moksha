@@ -232,7 +232,10 @@ lightbox.addEventListener('click', e => {
   box-shadow: 0 6px 16px rgba(0,0,0,0.3);
   margin: 0 auto 20px auto;
   width: fit-content;
-  text-align: center;
+
+  display: flex;              /* 👈 important */
+  justify-content: center;    /* 👈 horizontal center */
+  align-items: center;        /* 👈 vertical center */
 }
 
 /* Mobile responsiveness */
