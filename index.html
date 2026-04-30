@@ -138,9 +138,9 @@ button {background:#8E2C2C;color:white;padding:10px 20px;border:none;border-radi
 
   <button type="submit">Send Message</button>
 </form>
-</div>
-  <p id="successMessage" style="display:none; color:green; font-weight:bold;">Thank you! Your registration has been submitted.</p>
-</div>
+<p id="contactMsg" style="display:none; color:green; font-weight:bold;">
+  Thank you! Your message has been sent 🙏
+</p>
 
 <div class="container" id="register">
   <h2>Member Registration</h2>
@@ -255,26 +255,28 @@ lightbox.addEventListener('click', e => {
 }
 </style>
   <script>
-const form = document.querySelector('#contact form');
-const msg = document.getElementById('formMsg');
+const contactForm = document.getElementById('contactForm');
+const contactMsg = document.getElementById('contactMsg');
 
-form.addEventListener('submit', async function(e) {
+contactForm.addEventListener('submit', async function(e) {
   e.preventDefault();
-  const data = new FormData(form);
 
-  const response = await fetch(form.action, {
+  const data = new FormData(contactForm);
+
+  const response = await fetch(contactForm.action, {
     method: 'POST',
     body: data,
     headers: { 'Accept': 'application/json' }
   });
 
   if (response.ok) {
-    msg.style.display = 'block';
-    form.reset();
+    contactMsg.style.display = 'block';
+    contactForm.reset();
   } else {
     alert("Oops! Something went wrong.");
   }
 });
 </script>
+  
 </body>
 </html>
