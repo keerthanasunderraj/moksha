@@ -85,6 +85,7 @@ button {background:#8E2C2C;color:white;padding:10px 20px;border:none;border-radi
   <a href="#involved">Get Involved</a>
   <a href="#contact">Contact</a>
    <a href="#Onam ">Onam Registration</a>
+  <div id="google_translate_element" style="float:right; margin-right:20px;"></div>
 </nav>
 
 <div class="container" id="about">
@@ -94,7 +95,7 @@ button {background:#8E2C2C;color:white;padding:10px 20px;border:none;border-radi
 <div class="container" id="mission">
   <h2>Mission</h2>
   <p>
-    Moksha is dedicated to preserving and promoting Hindu Malayali culture, rooted in the timeless values of<strong>"Sanatana Dharma"</strong>  Through cultural education, community engagement, and shared experiences, we aim to pass on our traditions, language, and values to future generations while nurturing a spirit of unity and belonging in Canadian society.
+    Moksha is dedicated to preserving and promoting Hindu Malayali culture, rooted in the timeless values of<strong>"Sanatana Dharma".</strong>  Through cultural education, community engagement, and shared experiences, we aim to pass on our traditions, language, and values to future generations while nurturing a spirit of unity and belonging in Canadian society.
   </p>
 
   <h2>Vision</h2>
@@ -264,7 +265,19 @@ lightbox.addEventListener('click', e => {
   }
 }
 </style>
- 
+ <script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'ml,en',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript"
+src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
   
 </body>
 </html>
