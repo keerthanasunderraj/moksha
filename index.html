@@ -1,6 +1,60 @@
 <!DOCTYPE html>
 <head>
+<style>
+body {margin:0;font-family:Arial;background:#faf7f2;}
+header {position:relative;background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('kerala-bg.jpg');background-size:cover;background-position:center;color:white;padding:100px 20px;text-align:center;}
+header img.logo {
+  width: 280px;
+  max-width: 90%;
+  height: auto;
+  display: block;
+}
+h1 {font-size:3em;margin:0;}
+nav {background:#5C1A1A;text-align:center;padding:12px;}
+nav a {color:white;margin:10px;text-decoration:none;font-weight:bold;}
+  .container {
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  
+  /* Stacks a semi-transparent white layer over your silhouette image */
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), 
+    url('templesilhouette1.png');
+    
+  background-size: contain;       /* Fits the image inside the box */
+  background-repeat: no-repeat;   /* Prevents the temple from repeating */
+  background-position: bottom right; /* Places the silhouette in the bottom right corner */
+}
 
+/*.container {padding:30px;max-width:1000px;margin:auto;background:white;margin-top:20px;border-radius:10px;}*/
+h2 {color:#8E2C2C;}
+.cards {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+.card {background:#fff8f0;padding:20px;border-radius:10px;}
+footer {text-align:center;padding:20px;background:#5C1A1A;color:white;margin-top:20px;}
+input,textarea,select {width:100%;padding:10px;margin:8px 0;border-radius:5px;border:1px solid #ccc;}
+button {background:#8E2C2C;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;}
+#gallery img {cursor:pointer;width:100%;border-radius:8px;}
+#lightbox {position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);display:none;justify-content:center;align-items:center;}
+#lightbox.active {display:flex;}
+#lightbox img {max-width:90%;max-height:80%;}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8em !important;
+  }
+
+  header p {
+    font-size: 1em !important;
+  }
+
+  header div img {
+    width: 220px !important;
+  
+  }
+}
+</style> */
 </head>
 <body>
 
