@@ -1,6 +1,84 @@
 <!DOCTYPE html>
 <head>
 <style>
+  /* Right Side Flyer */
+.side-flyer{
+  position: fixed;
+
+  top: 180px;
+  right: 20px;
+
+  width: 240px;
+
+  background: white;
+
+  border-radius: 16px;
+
+  overflow: hidden;
+
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+
+  z-index: 999;
+}
+
+.side-flyer img{
+  width: 100%;
+  display: block;
+}
+
+.side-flyer-content{
+  padding: 15px;
+  text-align: center;
+}
+
+.side-flyer-content h3{
+  margin: 0;
+  color: #8E2C2C;
+}
+
+.side-flyer-content p{
+  font-size: 0.9em;
+  color: #444;
+}
+
+.side-flyer-content a{
+  display: inline-block;
+
+  margin-top: 10px;
+
+  padding: 10px 16px;
+
+  background: #D4AF37;
+
+  color: black;
+
+  text-decoration: none;
+
+  border-radius: 8px;
+
+  font-weight: bold;
+}
+
+/* Prevent overlap with content */
+body{
+  padding-right: 280px;
+}
+
+/* Mobile */
+@media (max-width: 1000px){
+
+  body{
+    padding-right: 0;
+  }
+
+  .side-flyer{
+    position: static;
+
+    width: 90%;
+
+    margin: 20px auto;
+  }
+}
   .tagline{
   margin-top:35px;
   font-size:1.05em;
@@ -112,7 +190,16 @@ button {background:#8E2C2C;color:white;padding:10px 20px;border:none;border-radi
    <a href="#Onam">Onam Registration</a>
   <div id="google_translate_element" style="float:right; margin-right:20px;"></div>
 </nav>
+<div class="side-flyer">
+  <img src="onamflyer.jpg" alt="Onam Flyer">
 
+  <div class="side-flyer-content">
+    <h3>Onam 2026</h3>
+    <p>August 22 • Yugal Kunj Temple</p>
+
+    <a href="#Onam">Register Now</a>
+  </div>
+</div>
 <div class="container" id="about">
   <h2>About Us</h2>
   <p>Moksha is a Hindu Malayali cultural organization devoted to preserving our heritage while embracing the diversity of Canadian society. We believe in nurturing identity, unity, and belonging for future generations.</p>
