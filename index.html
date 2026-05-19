@@ -124,7 +124,6 @@ body{
   padding-right: 280px;
 }
 
-/* Mobile */
 @media (max-width: 1000px){
 
   body{
@@ -132,12 +131,18 @@ body{
   }
 
   .side-flyer{
-    position: static;
-
-    width: 90%;
-
-    margin: 20px auto;
+    display:none;
   }
+
+  .mobile-flyer{
+    display:block;
+    margin-top:20px;
+  }
+}
+
+/* Hide mobile flyer on desktop */
+.mobile-flyer{
+  display:none;
 }
   .tagline{
   margin-top:35px;
@@ -338,7 +343,28 @@ button {background:#8E2C2C;color:white;padding:10px 20px;border:none;border-radi
       </video>
 
     </div>
+<div class="mobile-flyer" translate="no">
 
+  <div class="event-card">
+
+    <img src="onamflyer.jpg"
+         style="width:100%; border-radius:14px;">
+
+    <div style="text-align:center; margin-top:15px;">
+
+      <a href="https://www.zeffy.com/ticketing/onam-2026"
+         target="_blank"
+         class="event-btn">
+
+         Register Now
+
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
   </div>
 
 </div>
