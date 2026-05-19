@@ -172,7 +172,11 @@ header img.logo {
 h1 {font-size:3em;margin:0;}
 nav {background:#5C1A1A;text-align:center;padding:12px;}
 nav a {color:white;margin:10px;text-decoration:none;font-weight:bold;}
- 
+ /* Google Translate */
+#google_translate_element {
+  display: inline-block;
+  margin-left: 20px;
+}
 .container {padding:30px;max-width:1000px;margin:auto;background:white;margin-top:20px;border-radius:10px;}
 h2 {color:#8E2C2C;}
 .cards {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
@@ -248,7 +252,7 @@ button {background:#8E2C2C;color:white;padding:10px 20px;border:none;border-radi
   <a href="#events">Events</a>
   <a href="#involved">Get Involved</a>
   <a href="#contact">Contact</a>
-  <div id="google_translate_element" style="float:right; margin-right:20px;"></div>
+  <span id="google_translate_element"></span>
 </nav>
 <div class="side-flyer">
   <img src="onamflyer.jpg" alt="Onam Flyer">
@@ -470,21 +474,19 @@ lightbox.addEventListener('click', e => {
 }
   
 
-<script>
+<script type="text/javascript">
 function googleTranslateElementInit() {
-  new google.translate.TranslateElement(
-    {
-      pageLanguage: 'en',
-      includedLanguages: 'en,ml',
-      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-    },
-    'google_translate_element'
-  );
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'ml,en',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
 }
 </script>
 
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
+<script type="text/javascript"
+src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
 
 </body>
 </html>
