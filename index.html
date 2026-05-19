@@ -62,24 +62,6 @@
 
 }
   /* Right Side Flyer */
-.side-flyer{
-  position: fixed;
-
-  top: 180px;
-  right: 20px;
-
-  width: 210px;
-
-  background: white;
-
-  border-radius: 16px;
-
-  overflow: hidden;
-
-  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
-
-  z-index: 999;
-}
 
 .side-flyer img{
   width: 100%;
@@ -206,6 +188,29 @@ button {background:#8E2C2C;color:white;padding:10px 20px;border:none;border-radi
     width: 220px !important;
   
   }
+}
+  /* Mobile flyer */
+.mobile-flyer{
+  display:none;
+}
+
+/* Mobile view */
+@media (max-width:1000px){
+
+  body{
+    padding-right:0;
+  }
+
+  .side-flyer{
+    display:none;
+  }
+
+  .mobile-flyer{
+    display:block;
+    width:100%;
+    margin-top:20px;
+  }
+
 }
 </style> 
 </head>
@@ -343,6 +348,7 @@ button {background:#8E2C2C;color:white;padding:10px 20px;border:none;border-radi
       </video>
 
     </div>
+    
 <div class="mobile-flyer" translate="no">
 
   <div class="event-card">
