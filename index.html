@@ -192,8 +192,7 @@ button {background:#8E2C2C;color:white;padding:10px 20px;border:none;border-radi
 @media (max-width: 768px) {
 
   body{
-    font-size:17px;
-    line-height:1.7;
+    font-size:18px;
   }
 
   h1{
@@ -201,49 +200,42 @@ button {background:#8E2C2C;color:white;padding:10px 20px;border:none;border-radi
   }
 
   h2{
-    font-size:1.55em;
-    line-height:1.3;
+    font-size:1.6em;
   }
 
   h3{
-    font-size:1.25em;
+    font-size:1.3em;
   }
 
   p,
-  li{
-    font-size:1.02em;
-    line-height:1.75;
-  }
-
-  nav{
-    padding:14px 8px;
+  li,
+  a,
+  button{
+    font-size:1.05em;
+    line-height:1.7;
   }
 
   nav a{
     display:inline-block;
-    margin:8px 6px;
-    font-size:0.95em;
+    margin:8px;
+    font-size:1em;
   }
 
   .container{
-    padding:20px;
+    padding:22px;
   }
 
-  .event-btn,
-  button{
+  .event-btn{
     font-size:1em;
-    padding:14px 20px;
+    padding:12px 20px;
   }
 
   .tagline{
-    font-size:1.05em;
-    line-height:1.6;
-    padding:0 10px;
+    font-size:1.1em;
   }
 
   .namaskaram{
     font-size:1.5em;
-    margin-left:0;
   }
 
   .logo{
@@ -251,6 +243,9 @@ button {background:#8E2C2C;color:white;padding:10px 20px;border:none;border-radi
   }
 
 }
+
+
+
   /* Mobile flyer */
 .mobile-flyer{
   display:none;
@@ -285,9 +280,7 @@ button {background:#8E2C2C;color:white;padding:10px 20px;border:none;border-radi
   <div class="hero-banner" style="
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('mokshakeralapic1.png');
     min-height: 500px;
-    background-size: contain;
-background-repeat:no-repeat;
-background-color:#000;
+   background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
