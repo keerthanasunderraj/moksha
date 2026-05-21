@@ -293,7 +293,7 @@ button {background:#8E2C2C;color:white;padding:10px 20px;border:none;border-radi
     color: white;
     padding: 20px;
   ">
-
+<img src="mokshakeralapic1.png" class="mobile-hero-image">
     <!-- Center Logo -->
    <div class="logo-box">
      
@@ -570,6 +570,25 @@ lightbox.addEventListener('click', e => {
     min-height:420px !important;
     background-position:65% center !important;
     background-size:cover !important;
+  }
+
+}
+ .mobile-hero-image{
+  display:none;
+}
+
+@media (max-width:768px){
+
+  .hero-banner{
+    background:none !important;
+    min-height:auto !important;
+    padding-top:0 !important;
+  }
+
+  .mobile-hero-image{
+    display:block;
+    width:100%;
+    height:auto;
   }
 
 }
