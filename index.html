@@ -343,23 +343,7 @@ button {background:#8E2C2C;color:white;padding:10px 20px;border:none;border-radi
 </head>
 
 <body>
-<div class="social-icons">
 
-  <a href="https://www.instagram.com/mokshahamilton"
-     target="_blank">
-
-    <i class="fab fa-instagram"></i>
-
-  </a>
-
-  <a href="https://www.facebook.com/share/18T49piAZH/"
-     target="_blank">
-
-    <i class="fab fa-facebook-f"></i>
-
-  </a>
-
-</div>
 <header style="position:relative; padding:0; overflow:hidden;">
 
   <!-- Banner Background -->
@@ -404,10 +388,32 @@ button {background:#8E2C2C;color:white;padding:10px 20px;border:none;border-radi
 
 <nav>
 
-  <div class="menu-toggle" onclick="toggleMenu()">
-    ☰
+  <!-- TOP BAR -->
+  <div class="nav-top">
+
+    <!-- Mobile Hamburger -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+      ☰
+    </div>
+
+    <!-- Social Icons -->
+    <div class="nav-social">
+
+      <a href="https://www.instagram.com/mokshahamilton"
+         target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <a href="https://www.facebook.com/share/18T49piAZH/"
+         target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+
+    </div>
+
   </div>
 
+  <!-- NAV LINKS -->
   <div class="nav-links" id="mobileMenu">
 
     <a href="#about">About</a>
@@ -691,64 +697,63 @@ lightbox.addEventListener('click', e => {
   }
 
 }
- /* Social Icons */
-.social-icons{
-  position:fixed;
-  top:220px;
-  left:15px;
-
+/* NAV TOP BAR */
+.nav-top{
   display:flex;
-  flex-direction:column;
-  gap:12px;
-
-  z-index:999;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 15px;
 }
 
-.social-icons a{
-  width:48px;
-  height:48px;
-
-  border-radius:50%;
-
-  background:#8E2C2C;
-
-  color:white;
-
+/* Social Icons In Navbar */
+.nav-social{
   display:flex;
   align-items:center;
-  justify-content:center;
+  gap:12px;
+}
 
+.nav-social a{
+  color:white;
+  font-size:1.2em;
   text-decoration:none;
-
-  font-size:1.4em;
-
-  box-shadow:0 4px 12px rgba(0,0,0,0.25);
-
   transition:0.3s;
 }
 
-.social-icons a:hover{
+.nav-social a:hover{
+  color:#FFD369;
   transform:scale(1.1);
-  background:#D4AF37;
-  color:black;
 }
 
-/* Mobile Top Icons */
-@media (max-width:768px){
+/* Desktop Layout */
+@media (min-width:769px){
 
-  .social-icons{
-    position:absolute;
-    top:12px;
-    right:15px;
-    left:auto;
-
-    flex-direction:row;
+  .nav-top{
+    justify-content:flex-end;
+    gap:25px;
   }
 
-  .social-icons a{
-    width:40px;
-    height:40px;
-    font-size:1.1em;
+  .menu-toggle{
+    display:none;
+  }
+
+}
+
+/* Mobile Layout */
+@media (max-width:768px){
+
+  .nav-top{
+    padding:10px 15px;
+  }
+
+  .menu-toggle{
+    display:block;
+    color:white;
+    font-size:2em;
+    cursor:pointer;
+  }
+
+  .nav-social a{
+    font-size:1.15em;
   }
 
 }
