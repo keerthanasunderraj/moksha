@@ -312,7 +312,54 @@ button {background:#8E2C2C;color:white;padding:10px 20px;border:none;border-radi
   }
 
 }
+/* Sponsor Section */
 
+.sponsor-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+  gap:25px;
+  margin-top:25px;
+}
+
+
+.sponsor-card{
+  background:#fff8f0;
+  border-radius:18px;
+  padding:25px 15px;
+  text-align:center;
+  text-decoration:none;
+  color:#333;
+
+  box-shadow:0 8px 20px rgba(0,0,0,0.12);
+
+  transition:0.3s;
+}
+
+
+.sponsor-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 12px 25px rgba(0,0,0,0.18);
+}
+
+
+.sponsor-card img{
+  width:140px;
+  height:100px;
+  object-fit:contain;
+  margin-bottom:15px;
+}
+
+
+.sponsor-card h3{
+  color:#8E2C2C;
+  margin-bottom:5px;
+}
+
+
+.sponsor-card p{
+  color:#D4AF37;
+  font-weight:bold;
+}
 
 
   /* Mobile flyer */
@@ -419,6 +466,8 @@ button {background:#8E2C2C;color:white;padding:10px 20px;border:none;border-radi
     <a href="#mission">Mission & Vision</a>
     <a href="#programs">Programs</a>
     <a href="#events">Events</a>
+    <a href="#events sponsers">Event Sponsers</a>
+   
     <a href="#involved">Get Involved</a>
     <a href="#contact">Contact</a>
 
@@ -492,10 +541,7 @@ button {background:#8E2C2C;color:white;padding:10px 20px;border:none;border-radi
           and joyful community togetherness.
         </p>
 
-        <a href="YOUR-ZEFFY-LINK"
-           target="_blank"
-           class="event-btn">
-
+       
           Register Now
 
         </a>
@@ -530,6 +576,60 @@ button {background:#8E2C2C;color:white;padding:10px 20px;border:none;border-radi
   </div>
 
 </div>
+  </div>
+
+</div>
+ <div class="container" id="Event sponsors">
+
+  <h2>Our Sponsors</h2>
+
+  <p>
+    We gratefully acknowledge the generous support of our community partners who help us preserve and celebrate our cultural heritage.
+  </p>
+
+  <div class="sponsor-grid">
+
+    <!-- Sponsor 1 -->
+    <a href="https://yourwebsite.com" 
+       target="_blank" 
+       class="sponsor-card">
+
+      <img src="sponsor1.png" alt="Sponsor 1 Logo">
+
+      <h3>Company Name</h3>
+
+      <p>Gold Sponsor</p>
+
+    </a>
+
+
+    <!-- Sponsor 2 -->
+    <a href="https://yourwebsite.com" 
+       target="_blank" 
+       class="sponsor-card">
+
+      <img src="sponsor2.png" alt="Sponsor 2 Logo">
+
+      <h3>Company Name</h3>
+
+      <p>Silver Sponsor</p>
+
+    </a>
+
+
+    <!-- Sponsor 3 -->
+    <a href="https://yourwebsite.com" 
+       target="_blank" 
+       class="sponsor-card">
+
+      <img src="sponsor3.png" alt="Sponsor 3 Logo">
+
+      <h3>Company Name</h3>
+
+      <p>Community Partner</p>
+
+    </a>
+
   </div>
 
 </div>
